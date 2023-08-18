@@ -26,8 +26,8 @@ while True:
             label = "%s : %.2f" % (class_name[classid], round(score, 2))  # Round to 2 decimal places
             cv2.rectangle(frame, box, (255, 255, 255), 1)  # Green bounding box
             cv2.putText(frame, label, (box[0], box[1]+10),
-                    cv2.FONT_HERSHEY_COMPLEX, 0.3, (0, 255, 0), 1)  # Green text
-    cv2.imshow('frame', frame)
+            cv2.FONT_HERSHEY_COMPLEX, 0.3, (0, 255, 0), 1)  # Green text
+            cv2.imshow('frame', frame)
     key = cv2.waitKey(1)
     if key == ord('q'):
         break
