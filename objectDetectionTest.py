@@ -22,7 +22,7 @@ while True:
 
     for (classid, score, box) in zip(classes, scores, boxes):
         if classid == 2:
-            print(classid)
+            # print(classid)
             label = "%s : %.2f" % (class_name[classid], round(score, 2))  # Round to 2 decimal places
             cv2.rectangle(frame, box, (255, 255, 255), 1)  # Green bounding box
             cv2.putText(frame, label, (box[0], box[1]+10),
